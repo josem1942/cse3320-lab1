@@ -87,7 +87,7 @@ void handle_irq(void) {
         }        
         if (p1 & SYSTEM_TIMER_IRQ_1) {
 //             sys_timer_irq();         //!STUDENT_DONOT_SEE
-//             // sys_timer_irq_simple();  //!STUDENT_DONOT_SEE
+            sys_timer_irq_simple();  //!STUDENT_DONOT_SEE
             /* STUDENT_TODO: your code here */
             p1 &= (~SYSTEM_TIMER_IRQ_1);
         }
