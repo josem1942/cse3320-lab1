@@ -27,7 +27,7 @@ void kernel_main() {
 	sys_timer_init();                   // kernel timer: delay, timekeeping...
 	enable_interrupt_controller(0);     // coreid
 	// quest: sys_timer irq
-// 	enable_irq();		// !STUDENT_DONOT_SEE
+ 	enable_irq();		// !STUDENT_DONOT_SEE
 	/* STUDENT_TODO: your code here */
 
 	generic_timer_init();               // periodic ticks alive
@@ -35,7 +35,7 @@ void kernel_main() {
 	if (fb_init() != 0) BUG();          // will show the OS logo
 
 	// test_ktimer();
-	test_fb_voffset();               // cycle through color quads
+	// test_fb_voffset();               // cycle through color quads
 // 	donut();		// !STUDENT_DONOT_SEE    uses virtual timer for animation
 	/* STUDENT_TODO: your code here */
 
