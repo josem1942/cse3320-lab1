@@ -123,6 +123,7 @@ static int draw_frame(TKernelTimerHandle hTimer, void *param, void *context) {
 
 void donut(void) {
     int ret; 
+    printf("donut() function invoked\n");
     canvas_init();
     ret = ktimer_start(100, /*firing interval, ms*/
         draw_frame, 0 /*args*/, 0 /* context */); 
