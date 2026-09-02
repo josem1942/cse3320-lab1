@@ -41,7 +41,7 @@ void kernel_main() {
 
 	// quest: pixel donut. call donut_simple()
 	/* to enable it,  irq handler must be modified to call sys_timer_irq_simple() */
- 	donut_simple();		// !STUDENT_DONOT_SEE		directly uses hw timer irq for animation
+ 	// donut_simple();		// !STUDENT_DONOT_SEE		directly uses hw timer irq for animation
 	/* STUDENT_TODO: your code here */
 	
 	// donut_text();		// uncomment to see the textual (uart) donut animation instead
